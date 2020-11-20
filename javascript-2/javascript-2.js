@@ -37,6 +37,14 @@ let foods = [
 
 //CODE HERE
 
+foods.forEach( (index) => {
+  const protein = index.protein * 4;
+  const carbs = index.carbs * 4;
+  const fat = index.fat * 9;
+
+  index.calories = protein + carbs + fat
+})
+
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
   For problems 2-4, you will be working with the products array below.
@@ -81,6 +89,9 @@ const products = [
 */
 
 //CODE HERE
+const saleProducts = products.map( (item) => {
+  return { 'name':item.name, 'color':item.color, 'price':item.price-(item.price * .25) };
+})
 
 ////////////////////PROBLEM 3////////////////////
 /*
@@ -91,6 +102,15 @@ const products = [
 */
 
 //CODE HERE
+let blueProducts = []
+
+saleProducts.filter( (item) => {
+
+  if(item.color.includes('blue')){
+    blueProducts.push( item )
+  }
+
+})
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -98,8 +118,8 @@ const products = [
   Use the reduce method to add up the prices of the blueProducts. 
   Save the result to a variable called orderTotal.
 */
-
 //CODE HERE
+let orderTotal = blueProducts.reduce((acc, val) => { return acc + val; }, 0)
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*

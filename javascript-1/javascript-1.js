@@ -10,7 +10,7 @@
 
 //CODE HERE
 
-
+const myArr = [ 4, 'abc', [ 'cat', 'dog', 'bird'], 77 ]
 ////////////////////PROBLEM 2////////////////////
 /*
     The following array, nestedLetters, contains many levels of nested arrays.
@@ -18,11 +18,11 @@
     called 'foundZ'.
 */
 
-const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
+const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a'];
 
 //CODE HERE
 
-
+const foundZ = nestedLetters[5][2][1]
 ////////////////////PROBLEM 3////////////////////
 /*
     Use the spread operator to combine the following arrays into one array.
@@ -38,6 +38,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
+const animals = [ ...forest, ...ocean, ...savannah, ...desert ]
 
 /*
     Now use the spread operator to make a copy of your animals array.
@@ -46,6 +47,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
 
+const animalsCopy = [ ...animals, 'elephant' ]
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -56,7 +58,17 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
+const compareNums = ( num1, num2 ) => {
 
+    if( num1 < num2){
+        return num2
+    }else if ( num1 > num2){
+        return num1
+    }else{
+        return num1
+    }
+
+}
   
 ////////////////////PROBLEM 5////////////////////
 /*
@@ -69,7 +81,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
   
-  
+  const bestMovie = ( title ) => { return title +' is the best movie ever!' }
 ////////////////////PROBLEM 6////////////////////
 /*
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
@@ -77,7 +89,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
   
-
+const jsNinja = () => { return 'I am a JavaScript ninja!'}
 ////////////////////PROBLEM 7////////////////////
 
 //DO NOT EDIT CODE BELOW
@@ -98,7 +110,7 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
   
-
+delete gameInfo.rating
 ////////////////////PROBLEM 8////////////////////
 
 //DO NOT EDIT CODE BELOW
@@ -120,6 +132,11 @@ const desert = ['rattlesnake', 'coyote']
 
 //CODE HERE
   
+for (const key in shapes) {
+    if(shapes[key] % 2){
+        delete shapes[key]
+    }
+  }
   
 ////////////////////PROBLEM 9////////////////////
 
@@ -162,6 +179,13 @@ const classes = [
 
 //CODE HERE
 
+ for( let i = 0; i < classes.length; i++){
+    for( const key in i ) {
+        if( i[key] = true ) {
+            i[key] = false
+         }
+    }
+ }
   
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -178,7 +202,9 @@ let pairsArray = []
 
 //CODE HERE
 
-    
+    for( let i = 0; i < lettersToPair.length; i++ ){
+        
+    }
 
 //////////////////////////////////PROBLEMS 11-14//////////////////////////////////
 /*
