@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Devmountain Daily" content="Devmountain Daily" description=''>
     <title>Devmountain Daily</title>
 </head>
 <body>
@@ -13,20 +15,18 @@
             Devmountain Daily
         </h1>
 
-        <div>
             <ul>
                 <li> Home </li>
                 <li> Topics </li>
                 <li> Subscribe </li>
                 <li> Sign In </li>
             </ul>
-        </div>
 
     </nav>
 
-    <contentWrapper>
+    <div class='contentWrapper' >
 
-        <mainWrapper>
+        <div class='main'>
 
             <article>
 
@@ -46,34 +46,38 @@
 
             <article>
 
-                <section>
+                <section class='galleryHeader'>
                     <h2> Image Gallery</h2>
 
                     <p>View Larger</p>
                 </section>
 
-                <img src="placeholder.svg" alt='placeholder'>
-                <img src="placeholder.svg" alt='placeholder'>
-                <img src="placeholder.svg" alt='placeholder'>
-                <img src="placeholder.svg" alt='placeholder'>
-                <img src="placeholder.svg" alt='placeholder'>
-                <img src="placeholder.svg" alt='placeholder'>
+                <div class='imageGallery'>
+
+                    <img src="placeholder.svg" alt='placeholder'>
+                    <img src="placeholder.svg" alt='placeholder'>
+                    <img src="placeholder.svg" alt='placeholder'>
+                    <img src="placeholder.svg" alt='placeholder'>
+                    <img src="placeholder.svg" alt='placeholder'>
+                    <img src="placeholder.svg" alt='placeholder'>
+
+                </div>
                 
             </article>
 
-        </mainWrapper>
+        </div>
 
         <aside>
 
-            <div>
+            <div class='profile'>
 
-                <img src="placeholder.svg" alt="Profile Image" >
+                <img src="profile.svg" alt="Profile Image" >
 
                 <h2> Weston Bertlshofer</h2>
 
             </div>
 
-            <div>
+            <div class="articles">
 
                 <h3>Popular Articles</h3>
 
@@ -97,7 +101,7 @@
         </aside>
 
 
-    </contentWrapper>
+    </div>
 
     <footer>
 
